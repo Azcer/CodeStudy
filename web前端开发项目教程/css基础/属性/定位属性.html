@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>定位属性</title>
+    <!-- 
+        position:
+            1.static默认
+            2.absolute绝对定位(脱离文档流)，无父元素参照浏览器窗口，有父元素参照父元素
+            3.relative相对定位(没有脱离文档流) 参照自己的初始位置
+            4.fixed 固定定位
+            5.sticky 粘性定位 可以做吸顶效果
+        -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        div {
+            width: 200px;
+            height: 200px;
+        }
+
+        .box1 {
+            background: red;
+        }
+
+        .box2 {
+            background: blue;
+            position: relative;
+            top: 100px;
+            left: 100px;
+        }
+
+        .box3 {
+            background: yellow;
+        }
+
+        .box4 {
+            position: absolute;
+            background: green;
+            top: 100px;
+            left: 100px;
+        }
+
+        .box5 {
+            width: 500px;
+            height: 500px;
+            background: yellow;
+            position: relative;
+            left: 300px;
+        }
+
+        .box6 {
+            width: 100px;
+            height: 100px;
+            background: red;
+            position: absolute;
+            top: 100px;
+            left: 100px;
+        }
+
+        .box7 {
+            width: 100px;
+            height: 100px;
+            background: purple;
+            position: fixed;
+            top: 500px;
+            right: 0px;
+        }
+
+        .header {
+            background: yellow;
+            width: 100%;
+            height: 100px;
+        }
+
+        .nav {
+            background: red;
+            width: 500px;
+            height: 50px;
+            margin: 0 auto;
+            position: sticky;
+            top: 10px;
+        }
+
+        .body {
+            height: 1000px;
+            background: green;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 静态定位 -->
+    <div class="box1"></div>
+    <div class="box2">静态定位</div>
+    <div class="box3"></div>
+    <!-- 绝对定位 -->
+    <div class="box4">无父绝对定位</div><!-- 无父 -->
+    <div class="box5"><!-- 有父  -->
+        <div class="box6">有父绝对定位</div>
+    </div>
+    <!-- 固定定位 -->
+    <div class="box7">固定定位</div>
+    <!-- 粘性定位 -->
+    <div class="header"></div>
+    <div class="nav"></div>
+    <div class="body"></div>
+</body>
+
+</html>

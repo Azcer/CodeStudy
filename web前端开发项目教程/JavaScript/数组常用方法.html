@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>数组常用方法</title>
+</head>
+
+<body>
+    <script>
+        var arr = [1, 2, 3, 4, 5]
+        console.log(arr)
+        //push
+        var ret = arr.push('追加的')
+        console.log(arr)
+        console.log(ret)//返回值
+        //pop
+        ret = arr.pop()
+        console.log(arr)
+        console.log(ret)//返回值
+        //unshift
+        ret = arr.unshift('添加的')
+        console.log(arr)
+        console.log(ret)//返回值
+        //shift
+        ret = arr.shift()
+        console.log(arr)
+        console.log(ret)//返回值
+        //reverse()
+        ret = arr.reverse()
+        console.log(arr)
+        console.log(ret)//返回值
+        //splice()
+        ret = arr.splice(1, 1, '新来的')
+        console.log(arr)
+        console.log(ret)//返回值
+        //sort
+        arr = [3, 4, 1, 2, 6, 7, 5]
+        ret = arr.sort()
+        console.log(arr)
+        console.log(ret)//返回值
+        //join
+        ret = arr.join('-')
+        console.log(arr)
+        console.log(ret)//返回值
+        //concat
+        ret = arr.concat([1, 2, 3])
+        console.log(arr)
+        console.log(ret)//返回值)
+        //slice
+        ret = arr.slice(1, 3)
+        console.log(arr)
+        console.log(ret)//返回值
+        //indexOf
+        ret = arr.indexOf(7)
+        console.log(arr)
+        console.log(ret)//返回值
+        //forEach
+        ret = arr.forEach(function (item, index, arr) {
+            console.log(item)
+            console.log(index)
+            console.log(arr)
+            console.log('-------------------')
+        }
+        )
+        //map
+        ret = arr.map(function (item, index, arr) {
+            return item * 10
+        })
+        console.log(arr)
+        console.log(ret)//返回值
+        //filter
+        ret = arr.filter(function (item, index, arr) {
+            return item > 3
+        })
+        console.log(arr)
+        console.log(ret)//返回值
+        //every
+        ret = arr.every(function (item, index, arr) {
+            return item > 0
+        })
+        console.log(arr)
+        console.log(ret)//返回值
+        //some
+        ret = arr.some(function (item, index, arr) {
+            return item > 6
+        })
+        console.log(arr)
+        console.log(ret)//返回值
+    </script>
+</body>
+
+</html>

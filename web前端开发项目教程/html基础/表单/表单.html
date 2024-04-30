@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单</title>
+</head>
+<body>
+    <!-- 
+        form的属性：
+            1.method="get或者post" get(在URL中可以看到数据) post(不可看到)
+            2.action="向何处发送表单数据"
+
+        input的属性：
+            1.type="输入框的类型" text(文本) password(密码) submit(提交)和<button>提交按钮</button>一样
+                            button(单纯的按钮) reset(清空)
+            2.placeholder 描述输入字段预期值的简短的提示信息
+            3.name 必须设置，否则再提交表单时，用户在其中输入的数据不会被发送给服务器
+            4.value
+     -->
+    <form action="https:/www.jd.com" method="post">
+        用户信息：<input type="text" placeholder="请输入你用户信息" name="username"><br>
+        &emsp;&emsp;密码：<input type="password" placeholder="请输入你的密码" name="password"><br>
+        <input type="submit" value="登录">
+        <!-- <button type="submit">登录</button> -->
+        <input type="reset" value="重制">
+        <!-- <button type="reset">重制</button> -->
+        <input type="button" value="aaaa">
+    </form>
+</body>
+</html>

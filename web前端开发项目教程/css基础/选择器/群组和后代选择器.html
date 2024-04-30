@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>群组和后代选择器</title>
+    <style> 
+    /*群组选择器*/
+        div,p,h1{
+            background-color:yellow;
+        }
+    /*后代选择器(从后面往前)*/
+        div p{
+            background-color:red;
+        }
+        p b{
+            background-color:blue;
+        }
+    </style>
+</head>
+<body>
+    <div>1111111</div>
+    <p>1111111</p>
+    <h1>1111111</h1>
+    <div>
+        <p>22222222<b>333</b></p>
+    </div>
+</body>
+</html>

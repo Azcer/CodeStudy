@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>定位案例</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .containter {
+            width: 912px;
+            height: 600px;
+            margin: 0 auto;
+            background: yellow;
+        }
+
+        .box {
+            width: 275px;
+            height: 275px;
+            border: 6px solid #cccccc;
+            position: relative;
+            float: left;
+            margin-right: 25px;
+            margin-bottom: 25px;
+        }
+
+        .containter .last {
+            margin-right: 0px;
+            margin-bottom: 0px;
+        }
+
+        .box .pic {
+            width: 100%;
+        }
+
+        .box:hover .pic {
+            opacity: 0.7;
+            /*透明属性*/
+        }
+
+        .box .icon {
+            position: absolute;
+            left: 7px;
+            bottom: 7px;
+        }
+
+        .box .greenicon {
+            display: none;
+        }
+
+        .box:hover .greenicon {
+            display: block;
+        }
+
+        .box p {
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: white;
+            padding: 7px 5px;
+            display: none;
+        }
+
+        .box:hover p {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="containter">
+        <div class="box">
+            <img src="./image/img001.jpg" alt="" class="pic">
+            <img src="./image/tu.gif" alt="" class="icon">
+            <img src="./image/tu2.gif" alt="" class="icon greenicon">
+            <p>
+                <img src="./image/logo.gif" alt="">
+                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, molestiae totam placeat, a
+                    perferendis mollitia obcaecati dolorum natus in nulla optio cum repellendus doloribus praesentium
+                    dolorem incidunt atque ipsam aperiam?</span>
+            </p>
+        </div>
+        <div class="box">
+            <img src="./image/img001.jpg" alt="" class="pic">
+            <img src="./image/tu.gif" alt="" class="icon">
+            <img src="./image/tu2.gif" alt="" class="icon greenicon">
+            <p>
+                <img src="./image/logo.gif" alt="">
+                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, molestiae totam placeat, a
+                    perferendis mollitia obcaecati dolorum natus in nulla optio cum repellendus doloribus praesentium
+                    dolorem incidunt atque ipsam aperiam?</span>
+            </p>
+        </div>
+        <div class="box last">
+            <img src="./image/img001.jpg" alt="" class="pic">
+            <img src="./image/tu.gif" alt="" class="icon">
+            <img src="./image/tu2.gif" alt="" class="icon greenicon">
+            <p>
+                <img src="./image/logo.gif" alt="">
+                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, molestiae totam placeat, a
+                    perferendis mollitia obcaecati dolorum natus in nulla optio cum repellendus doloribus praesentium
+                    dolorem incidunt atque ipsam aperiam?</span>
+            </p>
+        </div>
+        <div class="box">
+            <img src="./image/img001.jpg" alt="" class="pic">
+            <img src="./image/tu.gif" alt="" class="icon">
+            <img src="./image/tu2.gif" alt="" class="icon greenicon">
+            <p>
+                <img src="./image/logo.gif" alt="">
+                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, molestiae totam placeat, a
+                    perferendis mollitia obcaecati dolorum natus in nulla optio cum repellendus doloribus praesentium
+                    dolorem incidunt atque ipsam aperiam?</span>
+            </p>
+        </div>
+        <div class="box">
+            <img src="./image/img001.jpg" alt="" class="pic">
+            <img src="./image/tu.gif" alt="" class="icon">
+            <img src="./image/tu2.gif" alt="" class="icon greenicon">
+            <p>
+                <img src="./image/logo.gif" alt="">
+                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, molestiae totam placeat, a
+                    perferendis mollitia obcaecati dolorum natus in nulla optio cum repellendus doloribus praesentium
+                    dolorem incidunt atque ipsam aperiam?</span>
+            </p>
+        </div>
+        <div class="box last">
+            <img src="./image/img001.jpg" alt="" class="pic">
+            <img src="./image/tu.gif" alt="" class="icon">
+            <img src="./image/tu2.gif" alt="" class="icon greenicon">
+            <p>
+                <img src="./image/logo.gif" alt="">
+                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, molestiae totam placeat, a
+                    perferendis mollitia obcaecati dolorum natus in nulla optio cum repellendus doloribus praesentium
+                    dolorem incidunt atque ipsam aperiam?</span>
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

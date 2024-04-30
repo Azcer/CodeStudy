@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>空余空间</title>
+    <!-- 
+        white-space:
+            nowrap:不换行
+            pre:显示空格，回车，不换行
+            pre-wrap:显示空格，回车，换行
+            pre-line:显示回车，不显示空格，换行
+     -->
+    <style>
+        div {
+            background: yellow;
+            width: 200px;
+            height: 200px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, reiciendis aliquid vero consequatur,
+        aspernatur, dolores commodi placeat eveniet cum nulla unde deleniti ullam natus quas perferendis odit ipsa
+        blanditiis? Natus!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente natus nemo, perferendis corrupti repudiandae,
+        at ad dolore sunt maiores pariatur sint deserunt nihil animi qui cumque? Quos itaque quam architecto.
+    </div>
+</body>
+
+</html>

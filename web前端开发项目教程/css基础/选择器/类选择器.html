@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>类选择器</title>
+    <!-- 范围较小 -->
+    <style>
+        .ibm{
+            background-color:blue;
+        }
+        .qianfeng{
+            color:red;
+            background-color:yellow;
+        }
+    </style>
+</head>
+<body>
+    <div>1111111</div>
+    <div class="ibm qianfeng">2222222</div><!-- 按style内的顺序执行 -->
+    <div class="ibm">3333333</div>
+    <div class="ibm">4444444</div>
+    <div>5555555</div>
+    <div>6666666</div>
+</body>
+</html>

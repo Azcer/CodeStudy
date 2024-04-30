@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>单选框</title>
+</head>
+<body>
+     <div>你的满意度如何</div>
+     <div>
+         <!-- checked的作用是默认选中 可以省略checked="checked"为checked -->
+         <input type="radio" name="a" checked="checked">非常满意
+         <input type="radio" name="a">满意
+         <input type="radio" name="a">一般
+         <input type="radio" name="a">不满意
+     </div>
+     <div>你的性别</div>
+     <div>
+         <!-- label的作用是当你点击字的时候也会选中 -->
+         <input type="radio" name="g" id="man"><label for="man">男</label>
+         <input type="radio" name="g" id="woman"><label for="woman">女</label>
+     </div>
+</body>
+</html>

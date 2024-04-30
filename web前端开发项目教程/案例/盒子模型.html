@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>盒子模型案例</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        img {
+            display: block;
+        }
+
+        #box {
+            width: 241px;
+            height: 335px;
+            padding: 11px 11px 18px;
+            margin: 0 auto;
+        }
+
+        .title {
+            width: 235px;
+            height: 19px;
+            padding: 4px;
+            border-left: 2px solid #254282;
+            color: #254282;
+            line-height: 19px;
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 12px;
+        }
+
+        .bigpic {
+            width: 241px;
+            height: 170px;
+        }
+
+        .bigpic p {
+            width: 241px;
+            height: 26px;
+            background-color: #f6f7f8;
+            font-size: 12px;
+            text-align: center;
+            line-height: 26px;
+            margin: 0px;
+        }
+
+        .smallpic {
+            width: 241px;
+            height: 120px;
+            margin-top: 12px;
+        }
+
+        .smallpic p {
+            font-size: 12px;
+            width: 112px;
+            background-color: #f6f7f8;
+            line-height: 18px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box">
+        <div class="title">女人图片</div>
+        <div class="bigpic">
+            <img src="..\img\big.png" alt="">
+            <p>大姐利用“异业联盟”经营美容院</p>
+        </div>
+        <div class="smallpic">
+            <div style="float: left;">
+                <img src="..\img\small1.png" alt="">
+                <p>
+                    无效穿搭，无效化妆，容貌焦虑
+                </p>
+            </div>
+            <div style="float: right;">
+                <img src="../img/small2.png" alt="">
+                <p>
+                    小个子不要怕，高人一等的穿搭给你
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
