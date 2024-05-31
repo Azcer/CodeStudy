@@ -118,7 +118,6 @@ ElementType DeleteQ(Queue Q) // 出队
     if (IsEmptyQueue(Q))
     {
         printf("队列空！\n");
-        return false;
     }
     else
     {
